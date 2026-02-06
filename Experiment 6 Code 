@@ -1,0 +1,351 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOdA7c5Cr6iqj/fN+++EBWQ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/bh4vyaaaa/Experiment-6-EDPL/blob/main/Experiment%206%20Code%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Experiment No 6\n",
+        "# Conditional Statements\n",
+        "## Bhavya Pandya\n",
+        "### 25070123139"
+      ],
+      "metadata": {
+        "id": "qLY1uNg-MCxu"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Check Weather a no is Positive/Negative or Zero\n",
+        "numbers= int(input(\"Enter a Number: \"))\n",
+        "if numbers>0:\n",
+        "    print(\"Number is Positive\")\n",
+        "elif numbers<0:\n",
+        "    print(\"Number is Negative\")\n",
+        "else:\n",
+        "    print(\"Number is Zero\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SMQNEK5QMEju",
+        "outputId": "c72f8f67-9799-457a-ccb5-b3b1632b8c2d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a Number: 4\n",
+            "Number is Positive\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Check Weather a No is even or odd\n",
+        "numbers= int(input(\"Enter a Number: \"))\n",
+        "if numbers%2==0:\n",
+        "    print(\"Number is Even\")\n",
+        "elif numbers%2!=0:\n",
+        "    print(\"Number is Odd\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FxTGwYPjMr2H",
+        "outputId": "27007ede-997b-4568-d7bb-4508f3822c3f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a Number: 5\n",
+            "Number is Odd\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Find The largest of two Numbers\n",
+        "numbers1= int(input(\"Enter a Number: \"))\n",
+        "numbers2= int(input(\"Enter a Number: \"))\n",
+        "if numbers1>numbers2:\n",
+        "    print(\"Number 1 is greater than Number 2\")\n",
+        "else:\n",
+        "    print(\"Number 2 is greater than Number 1\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "x1-xM6YLN4tK",
+        "outputId": "84c72f64-7e31-456f-8ddf-47f6a4f1fe97"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a Number: 45\n",
+            "Enter a Number: 67\n",
+            "Number 2 is greater than Number 1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Find Largest Of Three Numbers\n",
+        "numbers1= int(input(\"Enter a Number: \"))\n",
+        "numbers2= int(input(\"Enter a Number: \"))\n",
+        "numbers3= int(input(\"Enter a Number: \"))\n",
+        "if numbers1>numbers2 and numbers1>numbers3:\n",
+        "    print(\"Number 1 is greater than Number 2\")\n",
+        "elif numbers2>numbers1 and numbers2>numbers3:\n",
+        "    print(\"Number 2 is greater than Number 1\")\n",
+        "else:\n",
+        "    print(\"Number 2 is greater than Number 1\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UcrFcXj-O1gt",
+        "outputId": "76dfb392-4b6a-423b-93a6-f044587b072a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a Number: 45\n",
+            "Enter a Number: 67\n",
+            "Enter a Number: 89\n",
+            "Number 2 is greater than Number 1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Marks Of 5 Subjects and display Grades\n",
+        "Marks1 = int(input(\"Enter Marks of Subject 1: \"))\n",
+        "Marks2 = int(input(\"Enter Marks of Subject 2: \"))\n",
+        "Marks3 = int(input(\"Enter Marks of Subject 3: \"))\n",
+        "Marks4 = int(input(\"Enter Marks of Subject 4: \"))\n",
+        "Marks5 = int(input(\"Enter Marks of Subject 5: \"))\n",
+        "Average = (Marks1+Marks2+Marks3+Marks4+Marks5)/5\n",
+        "\n",
+        "if Average > 90:\n",
+        "    print(\"Grade O\")\n",
+        "elif Average > 80:\n",
+        "    print(\"Grade A\")\n",
+        "elif Average > 70:\n",
+        "    print(\"Grade B\")\n",
+        "elif Average > 60:\n",
+        "    print(\"Grade C\")\n",
+        "elif Average > 50:\n",
+        "    print(\"Grade D\")\n",
+        "else:\n",
+        "    print(\"Grade F\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lED2-tVUP5El",
+        "outputId": "41558070-9dca-46bc-ce91-80576ac97a13"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter Marks of Subject 1: 60\n",
+            "Enter Marks of Subject 2: 60\n",
+            "Enter Marks of Subject 3: 70\n",
+            "Enter Marks of Subject 4: 08\n",
+            "Enter Marks of Subject 5: 60\n",
+            "Grade D\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "year = int(input(\"Enter a year: \"))\n",
+        "\n",
+        "if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):\n",
+        "    print(f\"{year} is a leap year.\")\n",
+        "else:\n",
+        "    print(f\"{year} is not a leap year.\")"
+      ],
+      "metadata": {
+        "id": "Q7bT1WyYQ6vN",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ab066a76-791e-49b8-9d75-b8b886bf4848"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a year: 2026\n",
+            "2026 is not a leap year.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5978c153",
+        "outputId": "e956a02d-e0f4-4e4e-d16a-2b400fe81e45"
+      },
+      "source": [
+        "date_str = input(\"Enter a date in dd mm yy format (e.g., 01 01 23): \")\n",
+        "\n",
+        "try:\n",
+        "\n",
+        "    parts = date_str.split()\n",
+        "    if len(parts) != 3:\n",
+        "        raise ValueError(\"Invalid format. Please enter dd mm yy.\")\n",
+        "\n",
+        "    day = int(parts[0])\n",
+        "    month = int(parts[1])\n",
+        "    year = int(parts[2])\n",
+        "\n",
+        "\n",
+        "    if not (1 <= month <= 12):\n",
+        "        print(\"Invalid month. Month must be between 1 and 12.\")\n",
+        "    else:\n",
+        "\n",
+        "        if month == 2:\n",
+        "            max_days = 28\n",
+        "        elif month in [4, 6, 9, 11]:\n",
+        "            max_days = 30\n",
+        "        else:\n",
+        "            max_days = 31\n",
+        "\n",
+        "        if not (1 <= day <= max_days):\n",
+        "            print(f\"Invalid day. Day must be between 1 and {max_days} for month {month}.\")\n",
+        "        else:\n",
+        "            print(f\"Original date: {day:02d}/{month:02d}/{year}\")\n",
+        "\n",
+        "\n",
+        "            next_day = day\n",
+        "            next_month = month\n",
+        "            next_year = year\n",
+        "\n",
+        "            if next_day < max_days:\n",
+        "                next_day += 1\n",
+        "            else:\n",
+        "                next_day = 1\n",
+        "                if next_month == 12:\n",
+        "                    next_month = 1\n",
+        "                    next_year += 1\n",
+        "                else:\n",
+        "                    next_month += 1\n",
+        "\n",
+        "            print(f\"Incremented date: {next_day:02d}/{next_month:02d}/{next_year}\")\n",
+        "\n",
+        "except ValueError as e:\n",
+        "    print(f\"Error: {e}. Please ensure dd, mm, yy are valid numbers and the format is correct.\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a date in dd mm yy format (e.g., 01 01 23): 45 78 99\n",
+            "Invalid month. Month must be between 1 and 12.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "c6a34eda"
+      },
+      "source": [
+        "basic_salary = float(input(\"Enter the basic salary: \"))\n",
+        "hra = 0.0\n",
+        "da = 0.0\n",
+        "if basic_salary <= 10000:\n",
+        "    hra = 0.20 * basic_salary\n",
+        "    da = 0.80 * basic_salary\n",
+        "elif basic_salary <= 20000:\n",
+        "    hra = 0.25 * basic_salary\n",
+        "    da = 0.90 * basic_salary\n",
+        "else:\n",
+        "    hra = 0.30 * basic_salary\n",
+        "    da = 0.95 * basic_salary\n",
+        "gross_salary = basic_salary + hra + da\n",
+        "print(f\"\\nBasic Salary: {basic_salary:.2f}\")\n",
+        "print(f\"House Rent Allowance (HRA): {hra:.2f}\")\n",
+        "print(f\"Dearness Allowance (DA): {da:.2f}\")\n",
+        "print(f\"Gross Salary: {gross_salary:.2f}\")"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "274cd1a7"
+      },
+      "source": [],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
